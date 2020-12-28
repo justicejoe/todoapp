@@ -1,0 +1,41 @@
+version: "2.1"
+services:
+  api:
+    depends_on:
+      mongo2:
+        condition: service_healthy
+    build:
+      context: .
+      dockerfile: api.Dockerfile
+    restart: always
+    environment:
+      TZ: Asia/Bangkok
+    container_name: apiTodo
+    hostname: apiTodo
+    ports:
+      - 8081:8000
+    networks:
+      - todo
+  mongo2:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user
+      MONGO_INITDB_ROOT_PASSWORD: pass
+    volumes:
+      - ./db2/mongo:/data/db
+    ports:
+      - 27018:27017
+    container_name: mongotodo2
+    hostname: mongotodo2
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - todo
+
+networks:
+  todo:
+    external: true

@@ -1,0 +1,41 @@
+{
+  "app": {
+    "host": "HOST",
+    "port": "PORT"
+  },
+  "db": {
+    "mongodb": {
+      "uri": "MONGO_URI",
+      "mongooseOptions": {
+        "dbName": "MONGO_DBNAME",
+        "user": "MONGO_USER",
+        "pass": "MONGO_PASS"
+      }
+    },
+    "redis": {
+      "uri": "REDIS_URI"
+    }
+  },
+  "queue": {
+    "bull": {
+      "redis": {
+        "uri": "BULL_REDIS_URI"
+      }
+    }
+  },
+  "session": {
+    "secret": "SESSION_SECRET",
+    "cookie": {
+      "domain": "SESSION_COOKIE_DOMAIN"
+    }
+  },
+  "jwt": {
+    "secret": "JWT_SECRET"
+  },
+  "rabbitmq": {
+    "uri": "RABBITMQ_URI"
+  },
+  "pythonWebApi": {
+    "uri": "PYTHON_WEB_API"
+  }
+}

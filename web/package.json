@@ -1,0 +1,65 @@
+{
+  "name": "client",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.4",
+    "@date-io/moment": "1.3.13",
+    "@material-ui/core": "^4.9.7",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.45",
+    "@material-ui/pickers": "^3.2.10",
+    "@material-ui/styles": "^4.9.6",
+    "@mui-treasury/layout": "^3.3.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "apollo-boost": "^0.4.7",
+    "apollo-client": "^2.6.8",
+    "async": "^3.2.0",
+    "clsx": "^1.1.0",
+    "create-object-url": "^1.0.2",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "i18next": "^19.3.3",
+    "i18next-browser-languagedetector": "^4.0.2",
+    "i18next-xhr-backend": "^3.2.2",
+    "jsqr": "^1.2.0",
+    "moment": "^2.24.0",
+    "notistack": "^0.9.9",
+    "p-iteration": "^1.1.8",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.11.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-i18next": "^11.3.3",
+    "react-router": "^6.0.0-alpha.2",
+    "react-router-dom": "^6.0.0-alpha.2",
+    "react-scripts": "3.4.0",
+    "use-persisted-state": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint-config-nss": "^1.0.2",
+    "eslint-plugin-react-hooks": "^2.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "setup:local": "cp .env.local .env && cp docker-compose.dev.yml docker-compose.yml && yarn",
+    "setup:dev": "cp .env.dev .env && cp docker-compose.dev.yml docker-compose.yml && yarn"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

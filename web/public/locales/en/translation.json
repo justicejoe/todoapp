@@ -1,0 +1,9 @@
+{
+  "todoList": {
+    "title": "ToDo List",
+    "textBox": "Add new task here",
+    "navMenu": "ToDolist",
+    "navHeader": "App",
+    "select": "Filter Tasks here"
+  }
+}

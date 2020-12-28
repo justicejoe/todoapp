@@ -1,0 +1,9 @@
+{
+  "todoList": {
+    "title": "ToDo List",
+    "textBox": "เพิ่มหัวข้อใหม่ที่นี่",
+    "navMenu": "ToDolist",
+    "navHeader": "แอป",
+    "select": "คัดกรองหัวข้อที่นี่"
+  }
+}
